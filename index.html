@@ -1,0 +1,302 @@
+<html class="" lang="en" style="--wcm-color-fg-1: rgb(20,20,20); --wcm-color-fg-2: rgb(121,134,134); --wcm-color-fg-3: rgb(158,169,169); --wcm-color-bg-1: rgb(255,255,255); --wcm-color-bg-2: rgb(241,243,243); --wcm-color-bg-3: rgb(228,231,231); --wcm-color-overlay: rgba(0,0,0,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;">
+ <head>
+  <meta charset="utf-8"/>
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js">
+  </script>
+  <script src="https://unpkg.com/crypto-js@latest/crypto-js.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.js" type="application/javascript">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js">
+  </script>
+  <script src="./js/settings.js">
+  </script>
+  <script src="./js/webchunk.js">
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link as="image" href="logo/RV-horizontal-white.svg" rel="preload"/>
+  <link as="image" href="card-images/menu-left.svg" rel="preload"/>
+  <link as="image" href="card-images/yield.png" rel="preload"/>
+  <link as="image" href="card-images/stability.png" rel="preload"/>
+  <link as="image" href="card-images/trust.png" rel="preload"/>
+  <link as="image" href="card-images/eth-logo.png" rel="preload"/>
+  <link as="image" href="/footer-icons/footer-logo.svg" rel="preload"/>
+  <link as="image" href="/footer-icons/icon-4.svg" rel="preload"/>
+  <link as="image" href="/footer-icons/gitbook.svg" rel="preload"/>
+  <link as="image" href="/footer-icons/icon-1.svg" rel="preload"/>
+  <link crossorigin="" data-precedence="next" href="/_next/static/css/e003f22f0b76c182.css" rel="stylesheet"/>
+  <link as="script" crossorigin="" fetchpriority="low" href="/_next/static/chunks/webpack-b270b60d6ac81a88.js" rel="preload"/>
+  <script async="" crossorigin="" src="/_next/static/chunks/fd9d1056-a67240cfdd9512ac.js">
+  </script>
+  <script async="" crossorigin="" src="/_next/static/chunks/69-feddd74af7fd09cd.js">
+  </script>
+  <script async="" crossorigin="" src="/_next/static/chunks/main-app-a91ab301754ae529.js">
+  </script>
+  <script async="" src="/_next/static/chunks/484-bd1ad7569e7f4fa2.js">
+  </script>
+  <script async="" src="/_next/static/chunks/app/page-fce30f33e1bff65a.js">
+  </script>
+  <script async="" src="/_next/static/chunks/app/layout-6fb1308b65cc94b9.js">
+  </script>
+  <meta content="upgrade-insecure-requests" http-equiv="Content-Security-Policy"/>
+  <meta content="https://www.vectorreserve.com/logo.png" property="twitter:image"/>
+  <meta content="summary_large_image" property="twitter:card"/>
+  <meta content="Vector Reserve" property="twitter:title"/>
+  <meta content="Introducing vETH: DeFi's First Liquidity Position Derivative (LPD)" property="twitter:description"/>
+  <meta content="Introducing vETH: DeFi's First Liquidity Position Derivative (LPD)" property="description"/>
+  <meta content="https://www.vectorreserve.com/logo.png" property="og:image"/>
+  <meta content="Vector Reserve" property="og:title"/>
+  <meta content="Introducing vETH: DeFi's First Liquidity Position Derivative (LPD)" property="og:description"/>
+  <meta content="https://www.vectorreserve.com" property="og:url"/>
+  <title>
+   Vector Reserve | Home
+  </title>
+  <title>
+   Vector Reserve
+  </title>
+  <title>
+   Vector Reserve
+  </title>
+  <meta content="Vector Reserve" name="description"/>
+  <script crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js">
+  </script>
+  <script data-sdkn="@vercel/analytics" data-sdkv="1.1.2" defer="" src="/_vercel/insights/script.js">
+  </script>
+  <style id="_goober">
+   @keyframes go2264125279{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go3020080000{from{transform:scale(0);opacity:0;}to{transform:scale(1);opacity:1;}}@keyframes go463499852{from{transform:scale(0) rotate(90deg);opacity:0;}to{transform:scale(1) rotate(90deg);opacity:1;}}@keyframes go1268368563{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}@keyframes go1310225428{from{transform:scale(0) rotate(45deg);opacity:0;}to{transform:scale(1) rotate(45deg);opacity:1;}}@keyframes go651618207{0%{height:0;width:0;opacity:0;}40%{height:0;width:6px;opacity:1;}100%{opacity:1;height:10px;}}@keyframes go901347462{from{transform:scale(0.6);opacity:0.4;}to{transform:scale(1);opacity:1;}}.go4109123758{z-index:9999;}.go4109123758 > *{pointer-events:auto;}
+  </style>
+ </head>
+ <link href="totalcss.css" rel="stylesheet"/>
+ <body class="">
+  <main>
+   <div class="">
+    <div class="relative">
+     <div class="bg-landing-pattern bg-cover bg-no-repeat bg-center py-5 text-center tetx-white flex flex-col justify-center items-center">
+      <nav class="absolute bg-white/20 shadow-lg ring-1 ring-black/5 top-0 sm:left-20 left-10 sm:right-20 right-10 mt-3 p-4 rounded bg-white flex justify-between items-center border border-black text-white">
+       <img alt="" class="w-[200px] sm:w-[255px]" src="logo/RV-horizontal-white.svg"/>
+       <div class="space-x-8 md:block hidden">
+        <a>
+         Docs
+        </a>
+        <a>
+         About
+        </a>
+        <a>
+         <button class="bg-[#2D5AEA] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded connectButton">
+          Launch App
+         </button>
+        </a>
+       </div>
+       <button class="md:hidden connectButton">
+        <img alt="" src="card-images/menu-left.svg"/>
+       </button>
+      </nav>
+      <h1 class="mt-10 text-6xl pt-28 font-bold text-white h-64">
+       Welcome to Vector
+      </h1>
+      <p class="text-lg pb-16 text-white">
+       Introducing vETH: DeFi's First Liquidity Position Derivative (LPD)
+      </p>
+      <a class="absolute bottom-[-32px] transform -translate-y-1/32 bg-[#2D5AEA] hover:bg-blue-700 text-white font-bold py-4 px-16 rounded-lg border-4 border-white">
+       Launch App
+      </a>
+     </div>
+    </div>
+    <div class="mx-4 sm:mx-auto mt-20 max-w-6xl">
+     <div class="bg-[#F3F5FF] p-8 py-10 rounded-lg">
+      <div class="md:flex md:space-x-4">
+       <div class="md:w-1/2 space-y-2">
+        <h2 class="text-4xl font-bold">
+         Elevate Your ETH Yield
+        </h2>
+       </div>
+       <div class="md:w-1/2 space-y-2 text-md">
+        <p>
+         Vector harnesses cutting-edge capabilities of EigenLayer, delivering unmatched on-chain yield via the first Superfluid Staked LPD: vETH. Step into a realm where your assets work smarter, not harder.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mx-4 mt-12 sm:mt-20 sm:mx-auto max-w-6xl" id="about">
+     <div class="md:flex md:space-x-4 mx-4">
+      <div class="md:w-1/2 space-y-2">
+       <h2 class="text-4xl font-bold">
+        How does Vector work?
+       </h2>
+       <p>
+        Vector Reserve operates on a blend of innovative strategies and sustainable practices to establish a stable, growth-oriented reserve currency.
+       </p>
+      </div>
+      <div class="md:w-1/2 mt-4 sm:mt-0 space-y-2 flex flex-col items-end justify-end">
+       <div class="md:w-2/3 w-full bg-white p-4 rounded-lg shadow-md flex items-center space-x-2">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#2D5AEA]">
+         <span class="text-white">
+          1
+         </span>
+        </div>
+        <span class="ml-10">
+         <!-- -->
+         Swap ETH or LSTs/LRTs to vETH
+        </span>
+       </div>
+       <div class="md:w-2/3 w-full bg-white p-4 rounded-lg shadow-md flex items-center space-x-2">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#001982]">
+         <span class="text-white">
+          2
+         </span>
+        </div>
+        <span class="ml-4">
+         <!-- -->
+         Stake vETH + Vector
+        </span>
+       </div>
+       <div class="md:w-2/3 w-full bg-white p-4 rounded-lg shadow-md flex items-center space-x-2">
+        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-[#131314]">
+         <span class="text-white">
+          3
+         </span>
+        </div>
+        <span class="ml-4">
+         Claim Rewards
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="mx-4 mt-12 sm:mt-20 sm:mx-auto max-w-6xl">
+     <p class="mx-4 mb-3 text-sm font-bold text-[#001982]">
+      Benefits of Vector
+     </p>
+     <h2 class="text-4xl mx-4 font-bold mb-8">
+      Why Choose Vector?
+     </h2>
+     <div class="md:flex md:space-x-4 mx-4">
+      <div class="md:w-1/3 w-full bg-[#F3F5FF] p-4 rounded-lg space-y-2">
+       <img alt="Image description" src="card-images/yield.png" width="116px"/>
+       <h3 class="text-xl font-bold">
+        vETH LPD Utility
+       </h3>
+       <p>
+        vETH is a tokenised asset/index of ETH denominated Liquidity Positions (LP) against LST's and LRT's and is engineered to closely track the value of Ethereum while offering the best returns. vETH generates yield through utilising EigenLayer's Superfluid Staking, meaning vETH allows for the restaking of ETH LPs, amplifying yield opportunities beyond traditional staking methods.
+       </p>
+      </div>
+      <div class="md:w-1/3 w-full bg-[#F3F5FF] p-4 rounded-lg space-y-2 mt-4 md:mt-0">
+       <img alt="Image description" src="card-images/stability.png" width="116px"/>
+       <h3 class="text-xl font-bold">
+        Superfluid Staking
+       </h3>
+       <p>
+        As an early adopter of Superfluid Staking, Vector Reserve offers unique liquid yield opportunity that is not yet widely available. Instead of restaking ETH or LSTs in EigenLayer, Vector Reserve allows users to stake LP tokens. This mechanism enhances the utility and yield-generation potential of staked assets ensuring participants remain liquid with a yield bearing ETH proxy.
+       </p>
+      </div>
+      <div class="md:w-1/3 w-full bg-[#F3F5FF] p-4 mt-4 rounded-lg space-y-2 mt-4 md:mt-0">
+       <img alt="Image description" src="card-images/trust.png" width="116px"/>
+       <h3 class="text-xl font-bold">
+        VEC/Governance
+       </h3>
+       <p>
+        The VEC token continuously accrues backing over time whilst carefully managing a balanced and controlled supply. VEC works in tandem with vETH to create a sustainable ecosystem incentivizing the minting of vETH. VEC token holders are entrusted with governance rights, allowing them to participate in crucial decision-making processes that shape the future of the Vector Reserve protocol.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="mx-4 sm:mx-auto mt-4 sm:mt-20 max-w-6xl py-10 md:flex md:space-x-4 sm:mb-10 md:mb-20" style='background-image: url("/backgrounds/Layer_1.png"); background-position: 11% center; background-size: 40%; background-repeat: no-repeat;'>
+     <div class="md:w-1/2 space-y-4 md:mr-8 md:order-2 mx-4">
+      <p class="text-md text-gray-500">
+       Get Started with Vector
+      </p>
+      <h2 class="text-4xl font-bold">
+       Ready to Amplify Your ETH Returns?
+      </h2>
+      <p class="mb-4">
+       Dive into Vector today and discover the unmatched potential of Restaked LSTs, all powered by the groundbreaking eigen layer. Your journey to superior yields starts here.
+      </p>
+      <a>
+       <button class="bg-[#2D5AEA] hover:bg-blue-700 text-white font-bold py-3 px-16 rounded-lg border-4 border-white space-y-4 mt-3 connectButton">
+        Launch App
+       </button>
+      </a>
+     </div>
+     <div class="md:w-1/2 md:order-1 flex items-center justify-center mt-4 sm:mt-0">
+      <img alt="Image description" src="card-images/eth-logo.png" width="300px"/>
+     </div>
+    </div>
+    <footer class="bg-white px-8 py-4">
+     <div class="flex flex-col items-center md:flex-row md:justify-between w-full">
+      <img alt="Vector Reserve Logo" class="mb-4 md:mb-0" src="/footer-icons/footer-logo.svg"/>
+      <div class="flex justify-center space-x-4 mb-4 md:mb-0 md:pl-12">
+       <a>
+        <img alt="X Logo" src="/footer-icons/icon-4.svg"/>
+       </a>
+       <a>
+        <img alt="Gitbook Logo" src="/footer-icons/gitbook.svg"/>
+       </a>
+       <a>
+        <img alt="Telegram Logo" src="/footer-icons/icon-1.svg"/>
+       </a>
+       <a>
+        <p class="text-[#B0B8D8]">
+         Email
+        </p>
+       </a>
+       <a>
+        <p class="text-[#B0B8D8]">
+         Dextools
+        </p>
+       </a>
+       <a>
+        <p class="text-[#B0B8D8]">
+         Dextools (vETH)
+        </p>
+       </a>
+       <a>
+        <p class="text-[#B0B8D8]">
+         Medium
+        </p>
+       </a>
+      </div>
+      <div class="flex justify-center space-x-4">
+       <a>
+        <p class="text-[#B0B8D8]">
+         Privacy Policy
+        </p>
+       </a>
+       <a>
+        <p class="text-[#B0B8D8]">
+         Terms and Conditions
+        </p>
+       </a>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </main>
+  <script async="" crossorigin="" src="/_next/static/chunks/webpack-b270b60d6ac81a88.js">
+  </script>
+  <script>
+   (self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])
+  </script>
+  <script>
+   self.__next_f.push([1,"1:HL[\"/_next/static/css/e003f22f0b76c182.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L2\"\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"3:I[47690,[],\"\"]\n5:I[18407,[\"484\",\"static/chunks/484-bd1ad7569e7f4fa2.js\",\"931\",\"static/chunks/app/page-fce30f33e1bff65a.js\"],\"Lander\"]\n6:I[5613,[],\"\"]\n7:I[31778,[],\"\"]\n8:I[51120,[\"185\",\"static/chunks/app/layout-6fb1308b65cc94b9.js\"],\"Analytics\"]\na:I[48955,[],\"\"]\nb:[]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"2:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/e003f22f0b76c182.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"nAghxQqqicNOpYJ3M3uT0\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[\"$L4\",[\"$\",\"main\",null,{\"children\":[\"$\",\"$L5\",null,{}]}],null]]},[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"className\":\"\",\"children\":[[\"$\",\"meta\",null,{\"httpEquiv\":\"Content-Security-Policy\",\"content\":\"upgrade-insecure-requests\"}],[\"$\",\"meta\",null,{\"property\":\"twitter:image\",\"content\":\"https://www.vectorreserve.com/logo.png\"}],[\"$\",\"meta\",null,{\"property\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",null,{\"property\":\"twitter:title\",\"content\":\"Vector Reserve\"}],[\"$\",\"meta\",null,{\"property\":\"twitter:description\",\"content\":\"Introducing vETH: DeFi's First Liquidity Position Derivative (LPD)\"}],[\"$\",\"meta\",null,{\"property\":\"description\",\"content\":\"Introducing vETH: DeFi's First Liquidity Position Derivative (LPD)\"}],[\"$\",\"meta\",null,{\"property\":\"og:image\",\"content\":\"https://www.vectorreserve.com/logo.png\"}],[\"$\",\"meta\",null,{\"property\":\"og:title\",\"content\":\"Vector Reserve\"}],[\"$\",\"meta\",null,{\"property\":\"og:description\",\"content\":\"Introducing vETH: DeFi's First Liquidity Position Derivative (LPD)\"}],[\"$\",\"meta\",null,{\"property\":\"og:url\",\"content\":\"https://www.vectorreserve.com\"}],[\"$\",\"title\",null,{\"children\":\"Vector Reserve | Home\"}],[\"$\",\"body\",null,{\"className\":\"\",\"children\":[[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"styles\":null}],[\"$\",\"$L8\",null,{}]]}]]}],null]],\"initialHead\":[false,\"$L9\"],\"globalErrorComponent\":\"$a\",\"missingSlots\":\"$Wb\"}]]\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,"9:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Vector Reserve\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Vector Reserve\"}]]\n4:null\n"])
+  </script>
+  <script>
+   self.__next_f.push([1,""])
+  </script>
+  <next-route-announcer style="position: absolute;">
+  </next-route-announcer>
+  <wcm-modal>
+  </wcm-modal>
+  <iframe id="verify-api" src="https://verify.walletconnect.org/d8ac880d3a01d4204260b0ab273b9882" style="display: none;">
+  </iframe>
+ </body>
+</html>
